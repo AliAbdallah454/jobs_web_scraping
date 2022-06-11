@@ -54,7 +54,7 @@ while(True):
 
     print("*" * 100)
 
-    file = open("idk.txt", "r")
+    file = open(f"file{i}.txt", "r")
     intro = "FROM SERVER Here are the job opportunities that have been found, Enjoy\n\n\n\n"
     message = intro + file.read()
     file.close()
